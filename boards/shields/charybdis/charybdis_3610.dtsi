@@ -14,17 +14,17 @@
 &pinctrl {
     spi0_default: spi0_default {
         group1 {
-            psels = <NRF_PSEL(SPIM_SCK, 0, 24)>,
-                <NRF_PSEL(SPIM_MOSI, 0, 17)>,
-                <NRF_PSEL(SPIM_MISO, 0, 17)>;
+            psels = <NRF_PSEL(SPIM_SCK, 0, 22)>,
+                <NRF_PSEL(SPIM_MOSI, 0, 24)>,
+                <NRF_PSEL(SPIM_MISO, 0, 24)>;
         };
     };
 
     spi0_sleep: spi0_sleep {
         group1 {
-            psels = <NRF_PSEL(SPIM_SCK, 0, 24)>,
-                <NRF_PSEL(SPIM_MOSI, 0, 17)>,
-                <NRF_PSEL(SPIM_MISO, 0, 17)>;
+            psels = <NRF_PSEL(SPIM_SCK, 0, 22)>,
+                <NRF_PSEL(SPIM_MOSI, 0, 24)>,
+                <NRF_PSEL(SPIM_MISO, 0, 24)>;
             low-power-enable;
         };
     };
@@ -43,7 +43,7 @@
         compatible = "pixart,pmw3610";
         reg = <0>;
         spi-max-frequency = <2000000>;
-        irq-gpios = <&gpio0 22 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
+        irq-gpios = <&gpio0 17 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
         cpi = <700>;
         evt-type = <INPUT_EV_REL>;
         x-input-code = <INPUT_REL_X>;
@@ -54,7 +54,7 @@
         compatible = "pixart,pmw3610";
         reg = <0>;
         spi-max-frequency = <2000000>;
-        irq-gpios = <&gpio0 22 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
+        irq-gpios = <&gpio0 17 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
         cpi = <700>;
         evt-type = <INPUT_EV_REL>;
         x-input-code = <INPUT_REL_X>;
