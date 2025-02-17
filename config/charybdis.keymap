@@ -152,7 +152,6 @@
                         &trans  &trans  &trans    &trans  &trans
             >;
         };
-    };
 
         scroll {
             bindings = <
