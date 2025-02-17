@@ -30,8 +30,3 @@
 &trackball_split { 
 	status = "disabled"; 
 };
-/ {
-	vtrackball: virtual_input_trackball {
-		compatible = "zmk,virtual-input";
-	};
-};
