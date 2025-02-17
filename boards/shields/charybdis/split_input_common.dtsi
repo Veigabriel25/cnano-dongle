@@ -38,19 +38,6 @@
     };
   };
 
-
-  trackball_snipe_listener {
-    compatible = "zmk,input-behavior-listener";
-    device = <&trackball_split>;
-    layers = <3>;
-    evt-type = <INPUT_EV_REL>;
-    x-input-code = <INPUT_REL_X>;
-    y-input-code = <INPUT_REL_Y>;
-    scale-multiplier = <1>;
-    scale-divisor = <6>;
-  };
-
-
   trackball_listener2: trackball_listener2 {
     compatible = "zmk,input-listener";
     status = "disabled";
