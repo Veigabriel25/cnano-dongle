@@ -1,7 +1,5 @@
 #include "charybdis.dtsi"
 #include "split_input_common.dtsi"
-#include "charybdis_3610.dtsi"
-
 
 / {
     chosen {
@@ -40,9 +38,4 @@
         inversion-on;
         prechargep = <0x22>;
     };
-};
-/ {
-	vtrackball: virtual_input_trackball {
-		compatible = "zmk,virtual-input";
-	};
 };
